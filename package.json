@@ -1,0 +1,109 @@
+{
+  "name": "next-app-starter",
+  "version": "1.0.0",
+  "private": "true",
+  "description": "Next app starter with next.js v13.",
+  "author": {
+    "email": "oceanbao@outlook.com",
+    "name": "Ocean Bao",
+    "url": "https://oceanbao.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oceanbao/nextup/issues"
+  },
+  "homepage": "https://github.com/oceanbao/nextup",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint --ext=jsx,ts,tsx .",
+    "lint:fix": "eslint --ext=jsx,ts,tsx . --fix",
+    "test": "jest --watchAll",
+    "test:ci": "jest --ci",
+    "test:cov": "jest --coverage",
+    "analyze": "ANALYZE=true next build",
+    "format": "prettier --write \"./**/*.{js,jsx,ts,tsx}\"",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@headlessui/react": "1.7.4",
+    "@react-spring/web": "^9.5.5",
+    "@shopify/react-web-worker": "^5.0.6",
+    "@tanstack/react-virtual": "^3.0.0-beta.29",
+    "@use-gesture/react": "^10.2.22",
+    "d3-geo": "^3.0.1",
+    "dequal": "^2.0.3",
+    "downshift": "^7.0.4",
+    "lodash": "^4.17.21",
+    "match-sorter": "^6.3.1",
+    "next": "^13.0.4",
+    "next-themes": "^0.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-error-boundary": "^3.1.4",
+    "react-use": "^17.4.0",
+    "topojson-client": "^3.1.0",
+    "use-interval": "^1.4.0",
+    "warning": "^4.0.3"
+  },
+  "devDependencies": {
+    "@jackfranklin/test-data-bot": "^2.0.0",
+    "@next/bundle-analyzer": "^13.0.3",
+    "@tailwindcss/typography": "^0.5.8",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/d3-geo": "^3.0.2",
+    "@types/lodash": "^4.14.191",
+    "@types/node": "^18.7.16",
+    "@types/react": "^18.0.19",
+    "@types/topojson-client": "^3.1.1",
+    "@types/warning": "^3.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.36.2",
+    "@typescript-eslint/parser": "^5.36.2",
+    "autoprefixer": "^10.4.8",
+    "eslint": "^8.23.0",
+    "eslint-config-next": "13.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jest-dom": "^4.0.3",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.8",
+    "eslint-plugin-testing-library": "^5.9.1",
+    "husky": "^8.0.1",
+    "jest": "28.1.0",
+    "jest-environment-jsdom": "28.1.0",
+    "lint-staged": "^13.0.3",
+    "msw": "^0.49.1",
+    "postcss": "^8.4.16",
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.13",
+    "tailwindcss": "^3.1.8",
+    "typescript": "^4.8.3",
+    "whatwg-fetch": "^3.6.2"
+  },
+  "lint-staged": {
+    "*.{tsx,ts,mdx}": [
+      "npm run format",
+      "eslint --fix"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "keywords": []
+}
