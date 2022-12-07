@@ -11,6 +11,7 @@
 - ESLint + Prettier Config 📂
 - Husky 🐶
 - Self-Hosted Inter Font ␊
+- Testing suit
 
 ## Getting started
 
@@ -42,6 +43,7 @@ yarn install
 ## Included
 
 ### Custom classNames function
+
 > Under `/lib/classNames`
 
 ### Packages
