@@ -10,7 +10,8 @@ const nextConfig = withBundleAnalyzer({
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['bit.ly'],
+    domains: ['pbs.twimg.com'],
   },
 })
+
 module.exports = nextConfig
