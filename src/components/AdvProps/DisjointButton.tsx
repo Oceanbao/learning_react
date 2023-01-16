@@ -18,7 +18,7 @@ type ButtonDisjointProps = React.ComponentPropsWithoutRef<'button'> &
   ButtonKindDisjoint
 
 // Note: destructure no longer ok because of disjoint
-function DisjointButton(props: ButtonDisjointProps) {
+export function DisjointButton(props: ButtonDisjointProps) {
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     if (props.kind === 'primary') {
       props.specialPrimaryMethod()
@@ -34,6 +34,6 @@ function DisjointButton(props: ButtonDisjointProps) {
 // Polymorphic Component
 type PolyProps = React.PropsWithChildren<{ as: 'div' | 'section' | 'aside' }>
 
-function PolyContainer({ as: Component = 'div', children }: PolyProps) {
+export function PolyContainer({ as: Component = 'div', children }: PolyProps) {
   return <Component className='styles.container'>{children}</Component>
 }

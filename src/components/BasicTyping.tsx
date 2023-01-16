@@ -84,7 +84,10 @@ export default function BasicTyping() {
 // ------------------------------------------------------------
 // ------------------------------------------------------------
 
-function pickObjectKeys<T, K extends keyof T>(obj: T, keys: K[]) {
+function pickObjectKeys<T extends object, K extends keyof T>(
+  obj: T,
+  keys: K[]
+) {
   const result = {} as Pick<T, K> // important or else result[key] will err
   for (const key of keys) {
     if (key in obj) {
