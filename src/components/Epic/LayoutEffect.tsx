@@ -108,4 +108,4 @@ const allMessages = [
   content: m.split(': ')[1],
 }))
 
-type Message = typeof allMessages[0]
+type Message = (typeof allMessages)[0]

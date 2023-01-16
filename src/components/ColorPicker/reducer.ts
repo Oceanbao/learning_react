@@ -3,7 +3,7 @@ import { RGBColorType } from './types'
 // Type Template Literals
 const colors = ['red', 'green', 'blue'] as const
 
-type Colors = Uppercase<typeof colors[number]>
+type Colors = Uppercase<(typeof colors)[number]>
 // magical union
 type ActionTypes = `ADJUST_${Colors}`
 
