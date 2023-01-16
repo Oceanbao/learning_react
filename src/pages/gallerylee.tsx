@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
-import { createClient, SupabaseClient } from '@supabase/supabase-js'
-import Image from 'next/image'
+import { createClient } from '@supabase/supabase-js'
 import Head from 'next/head'
+import Image from 'next/image'
 
 export async function getStaticProps() {
   const supabaseAdmin = createClient(
