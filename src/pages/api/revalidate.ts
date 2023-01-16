@@ -8,7 +8,7 @@ export default async function handler(
   }
 
   try {
-    await res.revalidate('/')
+    await res.revalidate('/gallerylee')
     return res.json({ revalidate: true })
   } catch (err) {
     return res.status(500).send('Error revalidating')
